@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.appleye.onlinegallery.GallerySearchActivity"
+    tools:showIn="@layout/activity_gallery_search">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical">
+
+        <cn.appleye.onlinegallery.widget.ClearEditText
+            android:id="@+id/search_view"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@null"
+            android:hint="@string/search_hint" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="#eef1f8"
+            android:textSize="18sp"
+            android:text="@string/search_text"/>
+    </LinearLayout>
+</LinearLayout>
