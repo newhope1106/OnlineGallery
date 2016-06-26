@@ -1,4 +1,4 @@
-package appleye.cn.onlinegallery;
+package cn.appleye.onlinegallery;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

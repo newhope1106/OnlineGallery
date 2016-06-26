@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "appleye.cn.onlinegallery"
+        applicationId "cn.appleye.onlinegallery"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
