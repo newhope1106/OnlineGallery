@@ -6,9 +6,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class OnlineGalleryActivity extends Activity {
     private View mSearchImageOnlineView;
+
+    /* 两次返回键之间的间隔 */
+    private long mExitTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,4 +51,24 @@ public class OnlineGalleryActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * 连续两个返回键退出
+     * */
+    public void onBackPressed() {
+        exit();
+    }
+
+    public void exit() {
+        if ((System.currentTimeMillis() - mExitTime) > 1000) {
+            Toast.makeText(this,
+                    getString(R.string.keyback_hint), Toast.LENGTH_SHORT)
+                    .show();
+            mExitTime = System.currentTimeMillis();
+        } else {
+            finish();
+            System.exit(0);
+        }
+    }
+
 }

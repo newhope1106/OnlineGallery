@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="search_hint">输入名称</string>
+    <string name="search_hint">输入关键字</string>
     <string name="search_text">搜索</string>
     <string name="search_image_text">在线搜索图片-></string>
+    <string name="keyback_hint">再按一次退出程序</string>
 </resources>
