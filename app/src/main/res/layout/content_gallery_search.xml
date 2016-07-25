@@ -45,4 +45,9 @@
             android:textSize="18sp"
             android:text="@string/search_text"/>
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
